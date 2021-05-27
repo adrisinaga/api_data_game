@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "4b8cd7de-33d9-41e7-b618-3db936e035a4",
+		"name": "datagame",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "Anaconda 11",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "Anaconda II 2021",
+							"type": "text"
+						},
+						{
+							"key": "icon",
+							"value": "icon.png",
+							"type": "text"
+						},
+						{
+							"key": "play",
+							"value": "play",
+							"type": "text"
+						},
+						{
+							"key": "tag1",
+							"value": "tag1",
+							"type": "text"
+						},
+						{
+							"key": "tag2",
+							"value": "tag2",
+							"type": "text"
+						},
+						{
+							"key": "tag3",
+							"value": "tag3",
+							"type": "text"
+						},
+						{
+							"key": "tag4",
+							"value": "tag4",
+							"type": "text"
+						},
+						{
+							"key": "tag5",
+							"value": "tag5",
+							"type": "text"
+						},
+						{
+							"key": "run",
+							"value": "run",
+							"type": "text"
+						},
+						{
+							"key": "like",
+							"value": "like",
+							"type": "text"
+						},
+						{
+							"key": "comn",
+							"value": "comn",
+							"type": "text"
+						},
+						{
+							"key": "report",
+							"value": "report",
+							"type": "text"
+						},
+						{
+							"key": "statusgame",
+							"value": "on",
+							"type": "text"
+						},
+						{
+							"key": "published",
+							"value": "yes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/datagame/add_data_game.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datagame",
+						"add_data_game.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "36",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/datagame/delete_data_game.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datagame",
+						"delete_data_game.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Game PS2",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "Ini game keren banget",
+							"type": "text"
+						},
+						{
+							"key": "icon",
+							"value": "game.png",
+							"type": "text"
+						},
+						{
+							"key": "play",
+							"value": "now playing",
+							"type": "text"
+						},
+						{
+							"key": "tag1",
+							"value": "tag_1",
+							"type": "text"
+						},
+						{
+							"key": "tag2",
+							"value": "tag_2",
+							"type": "text"
+						},
+						{
+							"key": "tag3",
+							"value": "tag_3",
+							"type": "text"
+						},
+						{
+							"key": "tag4",
+							"value": "tag_4",
+							"type": "text"
+						},
+						{
+							"key": "tag5",
+							"value": "tag_5",
+							"type": "text"
+						},
+						{
+							"key": "run",
+							"value": "run now",
+							"type": "text"
+						},
+						{
+							"key": "like",
+							"value": "like now",
+							"type": "text"
+						},
+						{
+							"key": "comn",
+							"value": "comment",
+							"type": "text"
+						},
+						{
+							"key": "report",
+							"value": "report",
+							"type": "text"
+						},
+						{
+							"key": "statusgame",
+							"value": "on-air",
+							"type": "text"
+						},
+						{
+							"key": "published",
+							"value": "published",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/datagame/edit_data_game.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datagame",
+						"edit_data_game.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Game",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost/datagame/get_data_game.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datagame",
+						"get_data_game.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Select Data by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/datagame/select_data_game.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"datagame",
+						"select_data_game.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
